@@ -1,5 +1,5 @@
 body{
-	background-color: lightyellow;
+	background-color: lightblue;
 }
  h1 {
      font-family:  "Comic Sans MS", "Comic Sans";
@@ -8,4 +8,9 @@ p{
 color:blue;
 font-size: 200%;
 background:pink;
+}
+
+.top
+{
+background-color: lightyellow;
 }
