@@ -3,29 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <title>James Bai</title>
-<link rel="stylesheet" type="text/css" href="420.css">
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="starter-template.css" rel="stylesheet">
+
 </head>
 <body>
- <div class="top" style="text-align:center">
-<h1>James Bai's Home Page</h1>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">James Bai</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#about">About me</span></a></li>
+            <li><a href="#work">My work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>	
+
+
+    <div class="container">	
+      <div class="starter-template">
+        <h1>James Bai</h1>
+        <p class="lead">My name is James Bai and I'm a 1B student in the university of Waterloo</p>
+      </div>
+  </div>
+
 <hr>
-<p>
-My name is James Bai and I'm a student
-<ubr>
- enrolled in the university of waterloo on term 1B
-<br>
-Also, sorry about the comic sans
-</p>
-</div>
- <marquee  behavior="alternate" scrollamount="20" >
+<div>
 <a href="https://www.facebook.com/james.bai.12" title=lol>
 <img src="nyan.jpg" width="10%"><a>
-</marquee>
-<br>
- <marquee direction="right" behavior="alternate" scrollamount="20" >
 <a href="mailto:adept2015@hotmail.com" title=mail>
 <img src="doge.jpg"   width="10%">
 <a>
-</marquee>
+</div>
+<hr>
+
+<div id="about" class="container" data-parallax="scroll">	
+ <div class="jumbotron" id="transbox" >
+<h1>About me</h1>
+<font size="4" color="grey">
+Hello, my name is James Bai and I'm 1B math student enrolled in the University of Waterloo Math program. I am highly proficient in the usage of Java and C. I have experience with frontend development such as HTML, CSS and Javascript. Apart from programming and development, I have done in depth studies of real analysis and algebra. 
+</font> 
+  </div>	
+</div>
+
+<div id="work" class="container" data-parallax="scroll">	
+ <div class="jumbotron" id="transbox" >
+<h1>My work</h1>
+<font size="4" color="grey">
+In progress
+</font> 
+    </div>	
+    </div>
 </body>
 </html>
