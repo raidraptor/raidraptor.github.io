@@ -1,69 +1,152 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>James Bai</title>
-<link href="dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="starter-template.css" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="114514.png">
 
-</head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">James Bai</a>
+    <title>James's site</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          
+            <div class="inner">
+              <nav class="navbar navbar-default navbar-fixed-top">
+               <div class="container">
+                <ul class="nav navbar-nav">
+                 <li class="active"><a href="#">Home</a></li>
+                 <li><a href="#Jameslife">About me</a></li>
+                 <li><a href="#">In construction</a></li>
+                 <li><a href="./Kagerou daze.pdf">Resume</a></li>
+                </ul>
+                </div>
+              </nav>
+            </div>
+          
+
+          <div class="inner-cover">
+            <h1 class="cover-heading">What's up</h1>
+            <p class="lead">Welcome to my personal website. I'm your host James Bai.</p>
+            <p class="lead">
+              <a href="#Jameslife">
+            <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+            </a>
+            </p>
+          </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#about">About me</span></a></li>
-            <li><a href="#work">My work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <div class="container">
+          <div id="Jameslife">
+            <div class=".col-md-6 .col-md-offset-3">
+              <p class="about">Hi, my name is James Bai. I'm a student from university of waterloo pursuing a triple major in<br>
+              computer science, pure mathematics and combinatorics and optimization. 
+              </p>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="container">
+          <div id="interests">
+            <div class=".col-md-6 .col-md-offset-3">
+              <h2>Why the majors?</h2>
+            </div>
+           <div class=".col-md-3 ">
+              <p class="paragraph">I hear this a lot, a dozen of people have asked me this.<br>
+              My personal answer is: I want to be many places I can be.
+               I've always found life too short for me, 2 hours of guitar 
+               practice and a couple hours of reading is all I get each day. 
+               I believe that I should always make the most out of my life, doing both math and computer science.
+              </p>
+            </div>
+            <div class=".col-md-6 .col-md-offset-3">
+              <h2>Weekly goals I've been following</h2>
+            </div>
+           <div class=".col-md-3 ">
+              <p class="paragraph">
+               5 hours of GRE preperation<br>
+               15 hours of guitar<br>
+               5 hours of readings (currently on Abstract Algebra by Dummit and Foote) <br>
+               1 minute to check if George RR Martin finished "The Winds of Winter"
+              </p>
+            </div>
+          </div>
+          <div class="container">
+          <div id="Courses">
+            <div class=".col-md-6 .col-md-offset-3">
+              <h2>Course and non courses</h2>
+            </div>
+           <div class=".col-md-3 ">
+              <p class="paragraph">Here I have planned what I'm going look into in the future.<br>
+              Analysis line: PMath 351, 352, 365, 450, 451, 453<br>
+              Algebra line: PMath 347, 348, 445, 446, 467<br>
+              Computer science: CS466, CS475, CS486<br>
+              Optimization: CO330, CO342, CO442, CO485<br>
+              Non course: Lie groups, proof assistants.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>	
-
-
-    <div class="container">	
-      <div class="starter-template">
-        <h1>James Bai</h1>
-        <p class="lead">My name is James Bai and I'm a 1B student in the university of Waterloo</p>
+        </div>
       </div>
-  </div>
-
-<hr>
-<div>
-<a href="https://www.facebook.com/james.bai.12" title=lol>
-<img src="nyan.jpg" width="10%"><a>
-<a href="mailto:adept2015@hotmail.com" title=mail>
-<img src="doge.jpg"   width="10%">
-<a>
-</div>
-<hr>
-
-<div id="about" class="container" data-parallax="scroll">	
- <div class="jumbotron" id="transbox" >
-<h1>About me</h1>
-<font size="4" color="grey">
-Hello, my name is James Bai and I'm 1B math student enrolled in the University of Waterloo Math program. I am highly proficient in the usage of Java and C. I have experience with frontend development such as HTML, CSS and Javascript. Apart from programming and development, I have done in depth studies of real analysis and algebra. 
-</font> 
-  </div>	
-</div>
-
-<div id="work" class="container" data-parallax="scroll">	
- <div class="jumbotron" id="transbox" >
-<h1>My work</h1>
-<font size="4" color="grey">
-In progress
-</font> 
-    </div>	
     </div>
-</body>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
