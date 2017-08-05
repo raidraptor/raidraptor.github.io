@@ -16,6 +16,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
 <script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $(".loader-container").delay(1000).fadeOut(1000);
+
+        $(".loader").delay(1000).fadeOut(1000);
+});
+</script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -53,7 +60,21 @@ $(document).ready(function(){
   </head>
 
   <body>
-
+  <div class='loader-container'>
+	<div class="loader">
+		<div id="loader">
+    		<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="lading"></div>
+		</div>
+	</div>
+</div>
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
@@ -67,7 +88,7 @@ $(document).ready(function(){
                 <ul class="nav navbar-nav">
                  <li class="active"><a href="#">Home</a></li>
                  <li><a href="#Jameslife">About me</a></li>
-                 <li><a href="#">In construction</a></li>
+                 <li><a href="#Contact">Contact</a></li>
                  <li><a href="./Kagerou daze.pdf">Resume</a></li>
                 </ul>
                 </div>
@@ -77,7 +98,7 @@ $(document).ready(function(){
 
           <div class="inner-cover">
             <h1 class="cover-heading">What's up</h1>
-            <p class="lead">Welcome to my personal website. I'm your host James Bai.</p>
+            <p class="lead">Welcome to my personal website. I'm James Bai.</p>
             <p class="lead">
               <a href="#Jameslife">
             <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
@@ -121,6 +142,7 @@ $(document).ready(function(){
               </p>
             </div>
           </div>
+        </div>
           <div class="container">
           <div id="Courses">
             <div class=".col-md-6 .col-md-offset-3">
@@ -137,9 +159,36 @@ $(document).ready(function(){
             </div>
           </div>
         </div>
-      </div>
+        <footer>
+          <div id="Contact">
+            <div class=".col-sm-3 .col-md-offset-3">
+              <h2>Here's how you can find me anytime, anywhere</h2>
+                          </div>
+                   <div class="col-sm-12 align-center">
+                     <ul  class="social-network social-circle">
+
+                     <li>
+                       <a href="https://www.facebook.com/james.bai.12">
+              <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+              </a>
+              <li>
+                <a href="https://www.linkedin.com/in/james-bai-a1b40011b/">
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                            </a>
+              </li>
+              <li>
+                                <a href="https://github.com/raidraptor">
+
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                          </a>
+              </li>
+                     </ul>
+                                 </div>
+              </div>
+        </footer>
         </div>
       </div>
+        </div>
     </div>
 
     <!-- Bootstrap core JavaScript
