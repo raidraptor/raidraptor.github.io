@@ -311,7 +311,8 @@ li{
 }
 
 footer{
-	padding:400px;
+	padding-top:200px;
+  padding-bottom:400px;
 background: lightblue;	
 	text-align: center;
 }
